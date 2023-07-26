@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pageload text
+        /* window.onload= function(){
+            alert("Page is loaded")
+        }*/
+
+        window.onbeforeunload=function(){
+            console.log("Before unload");
+            return "Are you sure you want to leave?";
+        }
+         
+        const num=1234;
+        if(num===1234){
+            var greeting ="Hello 1234";
+        }
+        console.log(greeting) 
+
+
+    </script>
+    
+</body>
+</html>

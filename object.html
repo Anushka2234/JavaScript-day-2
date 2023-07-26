@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 201</title>
+</head>
+<body>
+    <script>
+       /* const person5={
+            'name':'Kalob',
+            //speak(name)
+            speak()
+            {
+               // console.log(`My name is ${name}`);
+               console.log(`My name is ${this.name}`);
+            }
+        }
+
+        //person5.speak("Anushka")
+        person5.speak()*/
+       const counter= ()=>
+       {
+            if(this.total===undefined){
+                this.total=1
+            }else{
+                this.total++
+            }
+            console.log("Running counter. Total is",this.total)
+        }
+        counter()
+        counter()
+
+    </script>
+    
+</body>
+</html>
